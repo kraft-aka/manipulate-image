@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --base: #ff6c55;
+  --spacing: 10px;
+  --blur: 10px;
+  --radius: 10px;
+  --imgOpacity: 0.8;
+  --baseColor: #fff;
+  --bgColor: #192734;
+}
+
+body {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  background-color: var(--bgColor);
+  color: var(--baseColor);
+}
+
+img {
+  width: 500px;
+  height: auto;
+  margin-top: 2em;
+  background: var(--baseColor);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+  opacity: var(--imgOpacity);
+  border-radius: var(--radius);
+}
+
+.controllers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0.5em auto;
+  width: 50vh;
+}
+
+label {
+  text-align: left;
+  margin: 0.5em 0;
+}
+
+#base {
+  width: 100%;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 0.5em;
+}
+
+.txt {
+  color: var(--base);
+}
