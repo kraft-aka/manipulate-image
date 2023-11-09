@@ -9,7 +9,7 @@
   --spacing: 10px;
   --blur: 10px;
   --radius: 10px;
-  --imgOpacity: 0.8;
+  --img-opacity: 0.5;
   --baseColor: #fff;
   --bgColor: #192734;
 }
@@ -20,16 +20,18 @@ body {
   font-size: 1rem;
   background-color: var(--bgColor);
   color: var(--baseColor);
+  animation-name: show;
+  animation-duration: 3s;
 }
 
 img {
   width: 500px;
   height: auto;
   margin-top: 2em;
-  background: var(--baseColor);
+  background: var(--base);
   padding: var(--spacing);
   filter: blur(var(--blur));
-  opacity: var(--imgOpacity);
+  opacity: var(--img-opacity);
   border-radius: var(--radius);
 }
 
@@ -60,4 +62,22 @@ h1 {
 
 .txt {
   color: var(--base);
+}
+
+p {
+  display: block;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }
